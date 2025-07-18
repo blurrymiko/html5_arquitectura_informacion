@@ -1,10 +1,276 @@
 <!--Módulo 3. Entrega práctica HTML-->
+
+<!--La validación emite una advertencia en el uso del "/" en el cierre de algunas etiquetas como <meta> <img> o <link> que no puedo corregir debido al autoformateo del VSCode-->
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Productora audiovisual para estudios de arquitectura y real estate"
+    />
+    <meta
+      name="keywords"
+      content="Inmobiliarias, Videos, Arquitectura, Interiorismo, Reformas, Real Estate, Fotografía"
+    />
+    <meta name="author" content="Rodrigo Álvarez González" />
+
+    <title>kubhi. Productora audiovisual</title>
+    <link rel="icon" href="assets/head_icon.ico" />
   </head>
-  <body></body>
+
+  <body>
+    <!--La barra de navegación estará anclada, con el logo a la izquierda y las secciones repartidas horizontalmente a la derecha, sin la viñeta-->
+    <header>
+      <div>
+        <img
+          src="assets/header_logo.jpg"
+          alt="Logotipo corporativo de kubhi."
+          width="80"
+          height="80"
+        />
+        <nav>
+          <ul>
+            <li><a href="INSERTAR_RUTA">SERVICIOS</a></li>
+            <li><a href="INSERTAR_RUTA">PROYECTOS</a></li>
+            <li><a href="INSERTAR_RUTA">BLOG</a></li>
+            <li><a href="INSERTAR_RUTA">SOBRE NOSOTROS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Esta sección posiblemente contendrá una imágen de fondo, que en el futuro podría ser un vídeo, con el título y subtítulo de la página por encima-->
+    <section id="bienvenida">
+      <div>
+        <img
+          src="assets/header_img.webp"
+          alt="Imagen de una edificación moderna sobre un campo verde"
+          width="1080"
+        />
+        <div>
+          <h1>Producciones cinematográficas para tus proyectos</h1>
+          <h2>Especialistas en vídeo para arquitectura y real estate</h2>
+        </div>
+      </div>
+    </section>
+
+    <!--Las dos siguientes secciones estarán divididas en dos columnas cada una, con la imagen en la izquierda y párrafo en la derecha en la primera sección y a la inversa en la segunda.-->
+    <section id="about-us">
+      <h2>QUIÉNES SOMOS</h2>
+      <div>
+        <figure>
+          <img
+            src="assets/sec_about_img.jpg"
+            alt="Fotografía del fundador de kubhi. con su cámara de vídeo"
+            width="500"
+          />
+          <figcaption>
+            Rodrigo Álvarez, filmmaker principal de <em>kubhi</em>.
+          </figcaption>
+        </figure>
+        <div>
+          <p>
+            En <em>kubhi.</em> creemos en la perfecta sinergia entre el
+            <strong>cine</strong> y la <strong>arquitectura</strong>. Por eso
+            apostamos por una combinación de pasión y creatividad, un valor
+            añadido que ayude a mostrar el alma de tus proyectos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="valores">
+      <h2>NUESTROS VALORES</h2>
+      <div>
+        <p>
+          Ponemos todo nuestro <strong>amor</strong> y
+          <strong>dedicación</strong> en cada proyecto. Creemos que cada
+          proyecto merece una <strong>narrativa visual</strong> única que cumpla
+          con:
+        </p>
+        <ul>
+          <li>Calidad cinematográfica</li>
+          <li>Compromiso con el detalle y perfección</li>
+          <li>Respeto máximo por la identidad del cliente</li>
+          <li>Máxima puntualidad y transparencia en las entregas</li>
+        </ul>
+        <figure>
+          <img
+            src="assets/sec_valores_img.jpeg"
+            alt="Plano general de una vivienda sobre un lago"
+            height="500"
+          />
+          <figcaption>
+            Burbuja Crystal Lake en Sidney, <em>MBA Architecture</em>.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!--La sección principal contará con un grid de tres columnas con imagenes de los últimos proyectos y un pequeño texto descriptivo en cada uno. A la derecha, encontraríamos un ASIDE con entradas del blog destacadas.-->
+    <main>
+      <section id="proyectos">
+        <h2>PROYECTOS</h2>
+        <div>
+          <article>
+            <img
+              src="assets/sec_proyectos_1_img.png"
+              alt="Proyecto Cubismo por MBA Architecture, imagen de una vivienda moderna con piscina"
+            />
+            <h4>
+              Cubismo: El salto arquitectónico de <em>MBA Architecture</em>.
+            </h4>
+            <a href="INSERTAR_RUTA">Leer más</a>
+          </article>
+
+          <article>
+            <img
+              src="assets/sec_proyectos_2_img.jpg"
+              alt="Proyecto ThePower, imagen de una vivienda clásica con acabados modernos"
+            />
+            <h4>
+              <em>ThePower</em> vuelve a un estilo clásico con mucha iluminación
+              y acabados modernos.
+            </h4>
+            <a href="INSERTAR_RUTA">Leer más</a>
+          </article>
+
+          <article>
+            <img
+              src="assets/sec_proyectos_3_img.jpg"
+              alt="Imagen de una vivienda moderna y asimétrica en Madrid"
+            />
+            <h4>
+              Esta vivienda extravagante se enmarca como la tendencia actual en
+              Madrid, de la mano de <em>Estudio VSC</em>.
+            </h4>
+            <a href="INSERTAR_RUTA">Leer más</a>
+          </article>
+        </div>
+      </section>
+
+      <aside>
+        <h2>NOTICIAS DESTACADAS</h2>
+        <ul>
+          <li>
+            <a href="INSERTAR_RUTA"
+              >5 claves para grabar inmuebles con luz natural</a
+            >
+          </li>
+          <li><a href="INSERTAR_RUTA">Drones y arquitectura</a></li>
+          <li>
+            <a href="INSERTAR_RUTA">La importancia de la narrativa visual</a>
+          </li>
+          <li>
+            <a href="INSERTAR_RUTA"
+              >Un "house tour" por las casas más lujosas</a
+            >
+          </li>
+          <li><a href="INSERTAR_RUTA">¿Casas de cine o cine de casas?</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!--Esta sección contará con animación de entrada y salida, deslizando y sustituyendo las opiniones de los clientes-->
+    <section id="clientes">
+      <h2>CLIENTES</h2>
+      <div>
+        <blockquote>
+          <p>"kubhi. es capaz de plasmar el alma de cada proyecto."</p>
+          <footer>
+            <cite>
+              <img
+                src="assets/sec_clientes_1_img.avif"
+                alt="Logotipo de ThePower Real Estate"
+                width="40"
+                height="40"
+              />José Ángel Cueto - ThePower Real Estate
+            </cite>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            "Nunca esperábamos que un vídeo pudiera plasmar tanta fuerza y
+            pasión."
+          </p>
+          <footer>
+            <cite>
+              <img
+                src="assets/sec_clientes_2_img.jpg"
+                alt="Logotipo de MBA Architecture"
+                width="40"
+                height="40"
+              />María Gómez Navarro - MBA Architecture
+            </cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="formulario_contacto">
+      <h2>CONTACTO</h2>
+      <form action="INSERTAR_RUTA" method="post">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <div>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div>
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" />
+          </div>
+
+          <div>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" id="mail" name="mail" />
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="3" cols="30"></textarea>
+          </div>
+        </fieldset>
+
+        <div>
+          <input type="checkbox" id="privacidad" name="privacidad" required />
+          <label for="privacidad">
+            Confirmo que he leído y acepto la
+            <a href="INSERTAR_RUTA" target="_blank"
+              >política de tratamiento de datos</a
+            >.
+          </label>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <!--El pie de página mostrará en el centro la información sobre el copyright, el teléfono de contacto y las redes sociales de la empresa-->
+    <footer>
+      <div>
+        <p>Contacto: +34 654 183 521</p>
+      </div>
+      <div>
+        <a href="INSERTAR_RUTA"
+          ><img src="assets/footer_linkedin_logo.png" alt="LinkedIn"
+        /></a>
+        <a href="INSERTAR_RUTA"
+          ><img src="assets/footer_ig_logo.png" alt="Instagram" />
+        </a>
+        <a href="INSERTAR_RUTA"
+          ><img src="assets/footer_tiktok_logo.png" alt="TikTok" />
+        </a>
+      </div>
+      <div>
+        <p>&copy; 2025 kubhi Producción audiovisual</p>
+      </div>
+    </footer>
+  </body>
 </html>
